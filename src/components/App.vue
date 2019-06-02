@@ -34,9 +34,10 @@
 </template>
 
 <script>
+
 import CalendarDay from './CalendarDay.vue';
 import CurrentMonth from './CurrentMonth.vue';
-import EventForm from './EventForm.vue'
+import EventForm from './EventForm.vue';
 
 export default {
 	computed: {
@@ -69,6 +70,7 @@ export default {
 
 			//Add days after current month
 			currentDay = this.$moment(days[days.length - 1])
+
 			if (currentDay.day() !== SUNDAY) {
 				do {
 					currentDay = this.$moment(currentDay).add(1, 'days');

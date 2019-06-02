@@ -22,6 +22,8 @@ export default {
 			let Today = this.day.isSame(this.$moment(), 'day')
 			let eventFormDate = this.$store.state.eventFormDate;
 			let eventFormActive = this.$store.state.eventFormActive;
+
+
 			return {
 				day: true,
 				today: Today,
